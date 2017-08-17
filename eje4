@@ -1,0 +1,29 @@
+using System;
+
+class test2
+{
+
+    public static void Main (string[] args){
+    
+        //inicializando
+        int hr_trbjo;
+        float pago_hr,hr_extra,hr_normal, pag_total;
+        
+        //captura de datos
+        Console.Write("Ingrese total de horas trabajadas");
+        hr_trbjo=Convert.ToInt32(Console.ReadLine());
+        Console.Write("Ingrese pago por hora: $");
+        pago_hr=Convert.ToInt32(Console.ReadLine());
+        
+        //proceso de datos        
+        if (hr_trbjo<40) {
+            pag_total=pago_hr*hr_trbjo;
+            Console.Write("Total horas trabajadas: "+hr_trbjo+"\nTotal a pagar: $"+pag_total);
+                
+        }else if (hr_trbjo>40) {
+            
+        }
+    
+    }
+    
+}
